@@ -1,5 +1,5 @@
 """
-jimakuChan Hardware Speech Capture
+VanillaChanny Hardware Speech Capture
 Desktop application for high-quality audio capture and speech recognition
 Sends results to browser via WebSocket
 """
@@ -511,7 +511,7 @@ class SpeechCaptureApp:
     async def run(self):
         """Run the application"""
         try:
-            logger.info("Starting jimakuChan Hardware Speech Capture...")
+            logger.info("Starting VanillaChanny Hardware Speech Capture...")
 
             # Start audio capture
             self.audio_capture.start()
@@ -543,7 +543,7 @@ class SpeechCaptureApp:
 def main():
     """Main entry point"""
     print("=" * 60)
-    print("jimakuChan Hardware Speech Capture")
+    print("VanillaChanny Hardware Speech Capture")
     print("Desktop application for high-quality speech recognition")
     print("=" * 60)
     print()

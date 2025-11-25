@@ -1,5 +1,5 @@
 """
-jimakuChan GUI Desktop Application
+VanillaChanny GUI Desktop Application
 Standalone speech recognition and subtitle application with OBS integration
 """
 

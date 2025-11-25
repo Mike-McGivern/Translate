@@ -1,6 +1,6 @@
 @echo off
 echo ================================================
-echo jimakuChan GUI Desktop Application
+echo VanillaChanny GUI Desktop Application
 echo ================================================
 echo.
 

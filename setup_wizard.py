@@ -1,5 +1,5 @@
 """
-jimakuChan Setup Wizard
+VanillaChanny Setup Wizard
 OBS-style setup wizard for first-time configuration
 """
 
@@ -18,7 +18,7 @@ class SetupWizard(ctk.CTkToplevel):
         super().__init__(parent)
 
         self.lang = lang_manager
-        self.title(self.lang.get("wizard.title") if self.lang else "jimakuChan Setup Wizard")
+        self.title(self.lang.get("wizard.title") if self.lang else "VanillaChanny Setup Wizard")
         self.geometry("700x600")
         self.resizable(False, False)
 

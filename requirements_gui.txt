@@ -1,4 +1,4 @@
-# jimakuChan GUI Desktop Application Dependencies
+# VanillaChanny GUI Desktop Application Dependencies
 
 # Core dependencies (from original requirements.txt)
 sounddevice>=0.4.6

@@ -75,7 +75,7 @@ def index():
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>jimakuChan Subtitles</title>
+    <title>VanillaChanny Subtitles</title>
     <style>
         body {
             margin: 0;
