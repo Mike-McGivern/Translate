@@ -1,0 +1,59 @@
+{
+  "audio": {
+    "sample_rate": 16000,
+    "channels": 1,
+    "chunk_duration": 10,
+    "device": 0,
+    "noise_threshold": 0.01,
+    "gate_threshold_db": -40,
+    "gate_release_time": 0.8
+  },
+  "whisper": {
+    "model_size": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "language": "en",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "translation": {
+    "target_language_1": "es",
+    "target_language_2": "ja",
+    "api_key": null
+  },
+  "output": {
+    "show_main": true,
+    "show_translation_1": true,
+    "show_translation_2": true,
+    "method": "browser"
+  },
+  "websocket": {
+    "host": "localhost",
+    "port": 8765
+  },
+  "gui": {
+    "language": "es",
+    "first_launch": false
+  },
+  "browser_output": {
+    "port": 8765,
+    "main": {
+      "font": "Arial",
+      "color": "#00FFFF",
+      "shadow_color": "#000000",
+      "font_size": 48
+    },
+    "trans1": {
+      "font": "Arial",
+      "color": "#FF8040",
+      "shadow_color": "#000000",
+      "font_size": 48
+    },
+    "trans2": {
+      "font": "Arial",
+      "color": "#FF80FF",
+      "shadow_color": "#000000",
+      "font_size": 48
+    }
+  }
+}

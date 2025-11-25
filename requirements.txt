@@ -1,0 +1,15 @@
+# jimakuChan Hardware Tools - Python Dependencies
+
+# Audio capture
+sounddevice>=0.4.6
+numpy>=1.24.0
+
+# Speech recognition
+faster-whisper>=1.0.0
+
+# WebSocket server
+websockets>=12.0
+
+# Optional: GPU acceleration support
+# Uncomment if you have NVIDIA GPU and CUDA installed
+# ctranslate2[cuda]

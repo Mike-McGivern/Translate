@@ -1,0 +1,138 @@
+{
+  "app_title": "jimakuChan - 音声認識と字幕",
+  "app_header": "🎤 jimakuChan Desktop",
+
+  "settings": "⚙️ 設定",
+  "tab_recognition": "🎤 音声認識",
+  "tab_output": "📤 出力",
+  "audio_device": "オーディオデバイス:",
+  "no_devices": "デバイスなし",
+  "noise_gate": "🎚️ ノイズゲート",
+  "threshold": "閾値:",
+  "threshold_value": "閾値: {value} dB",
+  "release_time": "リリース時間:",
+  "release_time_value": "リリース時間: {value}秒",
+
+  "model_settings": "🧠 Whisperモデル",
+  "model_size": "モデルサイズ:",
+
+  "languages_section": "🌐 言語",
+  "main_language": "メイン言語:",
+  "translated_language_1": "翻訳言語 1:",
+  "translated_language_2": "翻訳言語 2:",
+
+  "output_settings": "📤 出力設定",
+  "output_main": "メイン言語を出力",
+  "output_trans1": "翻訳1を出力",
+  "output_trans2": "翻訳2を出力",
+  "output_method": "出力方法:",
+  "output_note": "注: すべてのテキストは文字起こしに表示されます",
+
+  "audio_monitor": "📊 オーディオモニター",
+  "audio_level": "オーディオレベル",
+  "latest_transcription": "📝 最新の文字起こし",
+  "output_status": "出力:",
+  "output_not_started": "出力: 未開始",
+  "output_updating": "出力: subtitles.txt (更新中)",
+  "output_stopped": "出力: 停止",
+
+  "monitor": "📊 モニター",
+  "audio_level": "オーディオレベル",
+  "gate_status": "ゲート: 閉",
+  "gate_open": "ゲート: 開",
+  "gate_closed": "ゲート: 閉",
+  "output": "出力:",
+  "output_file": "出力: subtitles.txt",
+  "output_updating": "出力: subtitles.txt (更新中)",
+  "output_stopped": "出力: subtitles.txt (停止)",
+
+  "transcription": "💬 文字起こし",
+  "waiting": "音声を待っています...",
+
+  "buttons": {
+    "start": "▶️ 認識開始",
+    "stop": "⏹️ 認識停止",
+    "wizard": "🧙 セットアップウィザード",
+    "models_folder": "📁 モデルフォルダ",
+    "language": "🌐"
+  },
+
+  "messages": {
+    "started": "音声認識が開始されました",
+    "stopped": "音声認識が停止されました",
+    "models_folder_opened": "\nモデルフォルダを開きました: {path}\nモデルを手動で追加する方法については、そのフォルダ内のREADME.mdを参照してください。",
+    "error_starting": "認識開始エラー:",
+    "select_language": "Select your language / Seleccione su idioma / 言語を選択"
+  },
+
+  "errors": {
+    "model_load_failed": "モデル読み込み失敗",
+    "download_issue": "破損したダウンロードまたはネットワークの問題である可能性があります。\n\n試してください:\n1. インターネット接続を確認してください\n2. より小さいモデルを試してください（baseまたはsmall）\n3. キャッシュをクリアして再試行してください（キャッシュの場所はコンソールを参照）"
+  },
+
+  "wizard": {
+    "title": "セットアップウィザード",
+    "back": "← 戻る",
+    "next": "次へ →",
+    "finish": "完了",
+    "cancel": "キャンセル",
+
+    "step1_progress": "ステップ 1 / 4: マイク選択",
+    "step1_title": "🎤 マイクを選択",
+    "step1_desc": "音声認識に使用するマイクを選択してください:",
+    "no_devices": "❌ 入力デバイスが見つかりません！",
+    "test_microphone": "🔊 選択したマイクをテスト",
+    "testing": "🔊 マイクをテスト中...",
+    "mic_working": "✅ マイクが動作しています！",
+    "mic_quiet": "⚠️ 非常に静かまたは入力が検出されません",
+
+    "step2_progress": "ステップ 2 / 4: ノイズゲート調整",
+    "step2_title": "🎚️ ノイズゲートを調整",
+    "step2_desc": "次の文を明確に話してください:",
+    "test_sentence": "いろはにほへと ちりぬるを わかよたれそ つねならむ",
+    "current_level": "現在のレベル: {level} dB",
+    "start_monitoring": "▶️ モニター開始",
+    "stop_monitoring": "⏹️ モニター停止",
+    "gate_threshold": "ゲート閾値: {value} dB",
+    "auto_calibrate": "🔧 自動調整",
+
+    "step3_progress": "ステップ 3 / 4: モデル選択",
+    "step3_title": "🧠 Whisperモデルを選択",
+    "step3_desc": "精度と速度のバランスを選択してください:",
+
+    "step4_progress": "ステップ 4 / 4: 認識テスト",
+    "step4_title": "✅ セットアップをテスト",
+    "step4_desc": "設定が完了しました！「完了」をクリックして保存して開始します。",
+    "config_summary": "📋 設定の概要"
+  },
+
+  "models": {
+    "tiny": "Tiny - 最速、最低精度（39Mパラメータ、~75 MB）",
+    "base": "Base - 高速、まあまあの精度（74Mパラメータ、~145 MB）",
+    "small": "Small - バランス型（244Mパラメータ、~488 MB）[推奨]",
+    "medium": "Medium - 高精度、遅い（769Mパラメータ、~1.5 GB）",
+    "large": "Large - 最高精度、最も遅い（1550Mパラメータ、~3.1 GB）"
+  },
+
+  "languages": {
+    "en": "英語 / English",
+    "es": "スペイン語 / Español",
+    "ja": "日本語",
+    "auto": "自動検出"
+  },
+
+  "browser_output": {
+    "title": "🌐 ブラウザ出力 (OBS)",
+    "url_label": "ブラウザソースURL:",
+    "copy_url": "📋 URLをコピー",
+    "url_copied": "✅ URLをコピーしました!",
+    "main_styling": "メイン言語のスタイル:",
+    "trans1_styling": "翻訳1のスタイル:",
+    "trans2_styling": "翻訳2のスタイル:",
+    "font": "フォント:",
+    "text_color": "テキストの色:",
+    "shadow_color": "影の色:",
+    "preview": "プレビュー",
+    "instructions": "このURLをOBSのブラウザソースとして追加:\n1. OBSのソースを右クリック\n2. 追加 > ブラウザ\n3. 上記のURLを貼り付け\n4. 幅: 1920、高さ: 1080に設定\n5. '表示されていないときにソースをシャットダウンする'をチェック"
+  }
+}

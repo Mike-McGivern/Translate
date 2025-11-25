@@ -1,0 +1,138 @@
+{
+  "app_title": "jimakuChan - Speech Recognition & Subtitles",
+  "app_header": "🎤 jimakuChan Desktop",
+
+  "settings": "⚙️ Settings",
+  "tab_recognition": "🎤 Recognition",
+  "tab_output": "📤 Output",
+  "audio_device": "Audio Device:",
+  "no_devices": "No devices",
+  "noise_gate": "🎚️ Noise Gate",
+  "threshold": "Threshold:",
+  "threshold_value": "Threshold: {value} dB",
+  "release_time": "Release Time:",
+  "release_time_value": "Release Time: {value}s",
+
+  "model_settings": "🧠 Whisper Model",
+  "model_size": "Model Size:",
+
+  "languages_section": "🌐 Languages",
+  "main_language": "Main Language:",
+  "translated_language_1": "Translated Language 1:",
+  "translated_language_2": "Translated Language 2:",
+
+  "output_settings": "📤 Output Settings",
+  "output_main": "Output Main Language",
+  "output_trans1": "Output Translation 1",
+  "output_trans2": "Output Translation 2",
+  "output_method": "Output Method:",
+  "output_note": "Note: All text shown in Latest Transcription",
+
+  "audio_monitor": "📊 Audio Monitor",
+  "audio_level": "Audio Level",
+  "latest_transcription": "📝 Latest Transcription",
+  "output_status": "Output:",
+  "output_not_started": "Output: Not started",
+  "output_updating": "Output: subtitles.txt (updating)",
+  "output_stopped": "Output: Stopped",
+
+  "monitor": "📊 Monitor",
+  "audio_level": "Audio Level",
+  "gate_status": "Gate: Closed",
+  "gate_open": "Gate: Open",
+  "gate_closed": "Gate: Closed",
+  "output": "Output:",
+  "output_file": "Output: subtitles.txt",
+  "output_updating": "Output: subtitles.txt (updating)",
+  "output_stopped": "Output: subtitles.txt (stopped)",
+
+  "transcription": "💬 Transcription",
+  "waiting": "Waiting for speech...",
+
+  "buttons": {
+    "start": "▶️ Start Recognition",
+    "stop": "⏹️ Stop Recognition",
+    "wizard": "🧙 Setup Wizard",
+    "models_folder": "📁 Models Folder",
+    "language": "🌐"
+  },
+
+  "messages": {
+    "started": "Speech recognition started",
+    "stopped": "Speech recognition stopped",
+    "models_folder_opened": "\nOpened models folder: {path}\nSee README.md in that folder for instructions on adding models manually.",
+    "error_starting": "Error starting recognition:",
+    "select_language": "Select your language / Seleccione su idioma / 言語を選択"
+  },
+
+  "errors": {
+    "model_load_failed": "Model Loading Failed",
+    "download_issue": "This might be a corrupted download or network issue.\n\nTry:\n1. Check your internet connection\n2. Try a smaller model (base or small)\n3. Clear cache and retry (see console for cache location)"
+  },
+
+  "wizard": {
+    "title": "Setup Wizard",
+    "back": "← Back",
+    "next": "Next →",
+    "finish": "Finish",
+    "cancel": "Cancel",
+
+    "step1_progress": "Step 1 of 4: Microphone Selection",
+    "step1_title": "🎤 Select Your Microphone",
+    "step1_desc": "Choose the microphone you'll use for speech recognition:",
+    "no_devices": "❌ No input devices found!",
+    "test_microphone": "🔊 Test Selected Microphone",
+    "testing": "🔊 Testing microphone...",
+    "mic_working": "✅ Microphone working!",
+    "mic_quiet": "⚠️ Very quiet or no input detected",
+
+    "step2_progress": "Step 2 of 4: Noise Gate Calibration",
+    "step2_title": "🎚️ Calibrate Noise Gate",
+    "step2_desc": "Speak the following sentence clearly:",
+    "test_sentence": "The quick brown fox jumps over the lazy dog",
+    "current_level": "Current Level: {level} dB",
+    "start_monitoring": "▶️ Start Monitoring",
+    "stop_monitoring": "⏹️ Stop Monitoring",
+    "gate_threshold": "Gate Threshold: {value} dB",
+    "auto_calibrate": "🔧 Auto-Calibrate",
+
+    "step3_progress": "Step 3 of 4: Model Selection",
+    "step3_title": "🧠 Choose Whisper Model",
+    "step3_desc": "Select the balance between accuracy and speed:",
+
+    "step4_progress": "Step 4 of 4: Test Recognition",
+    "step4_title": "✅ Test Your Setup",
+    "step4_desc": "Your configuration is ready! Click 'Finish' to save and start.",
+    "config_summary": "📋 Configuration Summary"
+  },
+
+  "models": {
+    "tiny": "Tiny - Fastest, lowest accuracy (39M params, ~75 MB)",
+    "base": "Base - Fast, decent accuracy (74M params, ~145 MB)",
+    "small": "Small - Balanced (244M params, ~488 MB) [Recommended]",
+    "medium": "Medium - High accuracy, slower (769M params, ~1.5 GB)",
+    "large": "Large - Highest accuracy, slowest (1550M params, ~3.1 GB)"
+  },
+
+  "languages": {
+    "en": "English",
+    "es": "Spanish / Español",
+    "ja": "Japanese / 日本語",
+    "auto": "Auto Detect"
+  },
+
+  "browser_output": {
+    "title": "🌐 Browser Output (OBS)",
+    "url_label": "Browser Source URL:",
+    "copy_url": "📋 Copy URL",
+    "url_copied": "✅ URL Copied!",
+    "main_styling": "Main Language Styling:",
+    "trans1_styling": "Translation 1 Styling:",
+    "trans2_styling": "Translation 2 Styling:",
+    "font": "Font:",
+    "text_color": "Text Color:",
+    "shadow_color": "Shadow Color:",
+    "preview": "Preview",
+    "instructions": "Add this URL as a Browser Source in OBS:\n1. Right-click in OBS Sources\n2. Add > Browser\n3. Paste URL above\n4. Set Width: 1920, Height: 1080\n5. Check 'Shutdown source when not visible'"
+  }
+}

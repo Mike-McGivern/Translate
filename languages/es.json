@@ -1,0 +1,138 @@
+{
+  "app_title": "jimakuChan - Reconocimiento de Voz y Subtítulos",
+  "app_header": "🎤 jimakuChan Desktop",
+
+  "settings": "⚙️ Configuración",
+  "tab_recognition": "🎤 Reconocimiento",
+  "tab_output": "📤 Salida",
+  "audio_device": "Dispositivo de Audio:",
+  "no_devices": "Sin dispositivos",
+  "noise_gate": "🎚️ Puerta de Ruido",
+  "threshold": "Umbral:",
+  "threshold_value": "Umbral: {value} dB",
+  "release_time": "Tiempo de Liberación:",
+  "release_time_value": "Tiempo de Liberación: {value}s",
+
+  "model_settings": "🧠 Modelo Whisper",
+  "model_size": "Tamaño del Modelo:",
+
+  "languages_section": "🌐 Idiomas",
+  "main_language": "Idioma Principal:",
+  "translated_language_1": "Idioma Traducido 1:",
+  "translated_language_2": "Idioma Traducido 2:",
+
+  "output_settings": "📤 Configuración de Salida",
+  "output_main": "Mostrar Idioma Principal",
+  "output_trans1": "Mostrar Traducción 1",
+  "output_trans2": "Mostrar Traducción 2",
+  "output_method": "Método de Salida:",
+  "output_note": "Nota: Todo el texto se muestra en Última Transcripción",
+
+  "audio_monitor": "📊 Monitor de Audio",
+  "audio_level": "Nivel de Audio",
+  "latest_transcription": "📝 Última Transcripción",
+  "output_status": "Salida:",
+  "output_not_started": "Salida: No iniciado",
+  "output_updating": "Salida: subtitles.txt (actualizando)",
+  "output_stopped": "Salida: Detenido",
+
+  "monitor": "📊 Monitor",
+  "audio_level": "Nivel de Audio",
+  "gate_status": "Puerta: Cerrada",
+  "gate_open": "Puerta: Abierta",
+  "gate_closed": "Puerta: Cerrada",
+  "output": "Salida:",
+  "output_file": "Salida: subtitles.txt",
+  "output_updating": "Salida: subtitles.txt (actualizando)",
+  "output_stopped": "Salida: subtitles.txt (detenido)",
+
+  "transcription": "💬 Transcripción",
+  "waiting": "Esperando voz...",
+
+  "buttons": {
+    "start": "▶️ Iniciar Reconocimiento",
+    "stop": "⏹️ Detener Reconocimiento",
+    "wizard": "🧙 Asistente de Configuración",
+    "models_folder": "📁 Carpeta de Modelos",
+    "language": "🌐"
+  },
+
+  "messages": {
+    "started": "Reconocimiento de voz iniciado",
+    "stopped": "Reconocimiento de voz detenido",
+    "models_folder_opened": "\nCarpeta de modelos abierta: {path}\nConsulte README.md en esa carpeta para instrucciones sobre cómo agregar modelos manualmente.",
+    "error_starting": "Error al iniciar reconocimiento:",
+    "select_language": "Select your language / Seleccione su idioma / 言語を選択"
+  },
+
+  "errors": {
+    "model_load_failed": "Error al Cargar Modelo",
+    "download_issue": "Esto podría ser una descarga corrupta o problema de red.\n\nIntente:\n1. Verifique su conexión a internet\n2. Pruebe un modelo más pequeño (base o small)\n3. Limpie el caché e intente nuevamente (vea la consola para ubicación del caché)"
+  },
+
+  "wizard": {
+    "title": "Asistente de Configuración",
+    "back": "← Atrás",
+    "next": "Siguiente →",
+    "finish": "Finalizar",
+    "cancel": "Cancelar",
+
+    "step1_progress": "Paso 1 de 4: Selección de Micrófono",
+    "step1_title": "🎤 Seleccione su Micrófono",
+    "step1_desc": "Elija el micrófono que usará para reconocimiento de voz:",
+    "no_devices": "❌ ¡No se encontraron dispositivos de entrada!",
+    "test_microphone": "🔊 Probar Micrófono Seleccionado",
+    "testing": "🔊 Probando micrófono...",
+    "mic_working": "✅ ¡Micrófono funcionando!",
+    "mic_quiet": "⚠️ Entrada muy baja o no detectada",
+
+    "step2_progress": "Paso 2 de 4: Calibración de Puerta de Ruido",
+    "step2_title": "🎚️ Calibrar Puerta de Ruido",
+    "step2_desc": "Diga la siguiente oración claramente:",
+    "test_sentence": "El veloz murciélago hindú comía feliz cardillo y kiwi",
+    "current_level": "Nivel Actual: {level} dB",
+    "start_monitoring": "▶️ Iniciar Monitoreo",
+    "stop_monitoring": "⏹️ Detener Monitoreo",
+    "gate_threshold": "Umbral de Puerta: {value} dB",
+    "auto_calibrate": "🔧 Auto-Calibrar",
+
+    "step3_progress": "Paso 3 de 4: Selección de Modelo",
+    "step3_title": "🧠 Elegir Modelo Whisper",
+    "step3_desc": "Seleccione el balance entre precisión y velocidad:",
+
+    "step4_progress": "Paso 4 de 4: Probar Reconocimiento",
+    "step4_title": "✅ Probar su Configuración",
+    "step4_desc": "¡Su configuración está lista! Haga clic en 'Finalizar' para guardar e iniciar.",
+    "config_summary": "📋 Resumen de Configuración"
+  },
+
+  "models": {
+    "tiny": "Tiny - Más rápido, menor precisión (39M parámetros, ~75 MB)",
+    "base": "Base - Rápido, precisión decente (74M parámetros, ~145 MB)",
+    "small": "Small - Equilibrado (244M parámetros, ~488 MB) [Recomendado]",
+    "medium": "Medium - Alta precisión, más lento (769M parámetros, ~1.5 GB)",
+    "large": "Large - Máxima precisión, más lento (1550M parámetros, ~3.1 GB)"
+  },
+
+  "languages": {
+    "en": "Inglés / English",
+    "es": "Español",
+    "ja": "Japonés / 日本語",
+    "auto": "Detección Automática"
+  },
+
+  "browser_output": {
+    "title": "🌐 Salida de Navegador (OBS)",
+    "url_label": "URL de Fuente de Navegador:",
+    "copy_url": "📋 Copiar URL",
+    "url_copied": "✅ URL Copiada!",
+    "main_styling": "Estilo de Idioma Principal:",
+    "trans1_styling": "Estilo de Traducción 1:",
+    "trans2_styling": "Estilo de Traducción 2:",
+    "font": "Fuente:",
+    "text_color": "Color de Texto:",
+    "shadow_color": "Color de Sombra:",
+    "preview": "Vista Previa",
+    "instructions": "Agregue esta URL como Fuente de Navegador en OBS:\n1. Clic derecho en Fuentes de OBS\n2. Agregar > Navegador\n3. Pegar URL arriba\n4. Establecer Ancho: 1920, Alto: 1080\n5. Marcar 'Cerrar fuente cuando no esté visible'"
+  }
+}

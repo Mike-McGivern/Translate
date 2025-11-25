@@ -1,0 +1,20 @@
+# jimakuChan GUI Desktop Application Dependencies
+
+# Core dependencies (from original requirements.txt)
+sounddevice>=0.4.6
+numpy>=1.24.0
+faster-whisper>=1.0.0
+
+# GUI Framework
+customtkinter>=5.2.0
+Pillow>=10.0.0
+
+# Audio visualization
+matplotlib>=3.7.0
+
+# Optional: Translation support
+requests>=2.31.0
+
+# Browser output server
+Flask>=2.3.0
+flask-cors>=4.0.0
