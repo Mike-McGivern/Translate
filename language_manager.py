@@ -14,7 +14,9 @@ class LanguageManager:
     SUPPORTED_LANGUAGES = {
         "en": "English",
         "es": "Español",
-        "ja": "日本語"
+        "ja": "日本語",
+        "de": "Deutsch",
+        "fr": "Français"
     }
 
     def __init__(self, language_code: str = "en"):
