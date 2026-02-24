@@ -1,1 +1,138 @@
-{"greeting": "Hallo", "farewell": "Auf Wiedersehen"}
+{
+  "app_title": "VanillaChanny - Spracherkennung & Untertitel",
+  "app_header": "🎤 VanillaChanny Desktop",
+
+  "settings": "⚙️ Einstellungen",
+  "tab_recognition": "🎤 Erkennung",
+  "tab_output": "📤 Ausgabe",
+  "audio_device": "Audiogerät:",
+  "no_devices": "Keine Geräte",
+  "noise_gate": "🎚️ Rauschunterdrückung",
+  "threshold": "Schwellenwert:",
+  "threshold_value": "Schwellenwert: {value} dB",
+  "release_time": "Release-Zeit:",
+  "release_time_value": "Release-Zeit: {value}s",
+
+  "model_settings": "🧠 Whisper-Modell",
+  "model_size": "Modellgröße:",
+
+  "languages_section": "🌐 Sprachen",
+  "main_language": "Hauptsprache:",
+  "translated_language_1": "Übersetzungssprache 1:",
+  "translated_language_2": "Übersetzungssprache 2:",
+
+  "output_settings": "📤 Ausgabe-Einstellungen",
+  "output_main": "Hauptsprache ausgeben",
+  "output_trans1": "Übersetzung 1 ausgeben",
+  "output_trans2": "Übersetzung 2 ausgeben",
+  "output_method": "Ausgabemethode:",
+  "output_note": "Hinweis: Der gesamte Text erscheint in der letzten Transkription",
+
+  "audio_monitor": "📊 Audio-Monitor",
+  "audio_level": "Audiopegel",
+  "latest_transcription": "📝 Letzte Transkription",
+  "output_status": "Ausgabe:",
+  "output_not_started": "Ausgabe: Nicht gestartet",
+  "output_updating": "Ausgabe: subtitles.txt (aktualisiert)",
+  "output_stopped": "Ausgabe: Gestoppt",
+
+  "monitor": "📊 Monitor",
+  "audio_level": "Audiopegel",
+  "gate_status": "Gate: Geschlossen",
+  "gate_open": "Gate: Offen",
+  "gate_closed": "Gate: Geschlossen",
+  "output": "Ausgabe:",
+  "output_file": "Ausgabe: subtitles.txt",
+  "output_updating": "Ausgabe: subtitles.txt (aktualisiert)",
+  "output_stopped": "Ausgabe: subtitles.txt (gestoppt)",
+
+  "transcription": "💬 Transkription",
+  "waiting": "Warte auf Sprache...",
+
+  "buttons": {
+    "start": "▶️ Erkennung Starten",
+    "stop": "⏹️ Erkennung Stoppen",
+    "wizard": "🧙 Einrichtungsassistent",
+    "models_folder": "📁 Modellordner",
+    "language": "🌐"
+  },
+
+  "messages": {
+    "started": "Spracherkennung gestartet",
+    "stopped": "Spracherkennung gestoppt",
+    "models_folder_opened": "\nModellordner geöffnet: {path}\nSiehe README.md in diesem Ordner für Anweisungen zum manuellen Hinzufügen von Modellen.",
+    "error_starting": "Fehler beim Starten der Erkennung:",
+    "select_language": "Select your language / Seleccione su idioma / 言語を選択"
+  },
+
+  "errors": {
+    "model_load_failed": "Modell-Ladevorgang fehlgeschlagen",
+    "download_issue": "Dies könnte ein beschädigter Download oder ein Netzwerkproblem sein.\n\nVersuchen Sie:\n1. Überprüfen Sie Ihre Internetverbindung\n2. Probieren Sie ein kleineres Modell (base oder small)\n3. Löschen Sie den Cache und versuchen Sie es erneut (siehe Konsole für den Cache-Pfad)"
+  },
+
+  "wizard": {
+    "title": "Einrichtungsassistent",
+    "back": "← Zurück",
+    "next": "Weiter →",
+    "finish": "Fertigstellen",
+    "cancel": "Abbrechen",
+
+    "step1_progress": "Schritt 1 von 4: Mikrofon auswählen",
+    "step1_title": "🎤 Mikrofon auswählen",
+    "step1_desc": "Wählen Sie das Mikrofon, das für die Spracherkennung verwendet werden soll:",
+    "no_devices": "❌ Keine Eingabegeräte gefunden!",
+    "test_microphone": "🔊 Ausgewähltes Mikrofon testen",
+    "testing": "🔊 Mikrofon wird getestet...",
+    "mic_working": "✅ Mikrofon funktioniert!",
+    "mic_quiet": "⚠️ Sehr leise oder kein Eingang erkannt",
+
+    "step2_progress": "Schritt 2 von 4: Rauschunterdrückung kalibrieren",
+    "step2_title": "🎚️ Rauschunterdrückung kalibrieren",
+    "step2_desc": "Sprechen Sie den folgenden Satz deutlich:",
+    "test_sentence": "Fischers Fritz fischt frische Fische, frische Fische fischt Fischers Fritz",
+    "current_level": "Aktueller Pegel: {level} dB",
+    "start_monitoring": "▶️ Monitoring Starten",
+    "stop_monitoring": "⏹️ Monitoring Stoppen",
+    "gate_threshold": "Gate-Schwellenwert: {value} dB",
+    "auto_calibrate": "🔧 Automatisch Kalibrieren",
+
+    "step3_progress": "Schritt 3 von 4: Modell auswählen",
+    "step3_title": "🧠 Whisper-Modell auswählen",
+    "step3_desc": "Wählen Sie das gewünschte Verhältnis zwischen Genauigkeit und Geschwindigkeit:",
+
+    "step4_progress": "Schritt 4 von 4: Erkennung testen",
+    "step4_title": "✅ Einrichtung testen",
+    "step4_desc": "Ihre Konfiguration ist bereit! Klicken Sie auf 'Fertigstellen', um zu speichern und zu starten.",
+    "config_summary": "📋 Konfigurationsübersicht"
+  },
+
+  "models": {
+    "tiny": "Tiny – Schnellste, geringste Genauigkeit (39M Parameter, ~75 MB)",
+    "base": "Base – Schnell, ordentliche Genauigkeit (74M Parameter, ~145 MB)",
+    "small": "Small – Ausgewogen (244M Parameter, ~488 MB) [Empfohlen]",
+    "medium": "Medium – Hohe Genauigkeit, langsamer (769M Parameter, ~1.5 GB)",
+    "large": "Large – Höchste Genauigkeit, am langsamsten (1550M Parameter, ~3.1 GB)"
+  },
+
+  "languages": {
+    "en": "Englisch / English",
+    "es": "Spanisch / Español",
+    "ja": "Japanisch / 日本語",
+    "auto": "Automatische Erkennung"
+  },
+
+  "browser_output": {
+    "title": "🌐 Browser-Ausgabe (OBS)",
+    "url_label": "Browser-Quellen-URL:",
+    "copy_url": "📋 URL kopieren",
+    "url_copied": "✅ URL kopiert!",
+    "main_styling": "Hauptsprachen-Stil:",
+    "trans1_styling": "Übersetzung 1 – Stil:",
+    "trans2_styling": "Übersetzung 2 – Stil:",
+    "font": "Schriftart:",
+    "text_color": "Textfarbe:",
+    "shadow_color": "Schattenfarbe:",
+    "preview": "Vorschau",
+    "instructions": "Fügen Sie diese URL als Browserquelle in OBS hinzu:\n1. Rechtsklick in OBS-Quellen\n2. Hinzufügen > Browser\n3. Obige URL einfügen\n4. Breite: 1920, Höhe: 1080 einstellen\n5. 'Quelle schließen, wenn nicht sichtbar' aktivieren"
+  }
+}
