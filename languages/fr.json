@@ -1,0 +1,138 @@
+{
+  "app_title": "VanillaChanny - Reconnaissance Vocale & Sous-titres",
+  "app_header": "🎤 VanillaChanny Desktop",
+
+  "settings": "⚙️ Paramètres",
+  "tab_recognition": "🎤 Reconnaissance",
+  "tab_output": "📤 Sortie",
+  "audio_device": "Périphérique Audio :",
+  "no_devices": "Aucun périphérique",
+  "noise_gate": "🎚️ Porte de Bruit",
+  "threshold": "Seuil :",
+  "threshold_value": "Seuil : {value} dB",
+  "release_time": "Temps de Relâchement :",
+  "release_time_value": "Temps de Relâchement : {value}s",
+
+  "model_settings": "🧠 Modèle Whisper",
+  "model_size": "Taille du Modèle :",
+
+  "languages_section": "🌐 Langues",
+  "main_language": "Langue Principale :",
+  "translated_language_1": "Langue Traduite 1 :",
+  "translated_language_2": "Langue Traduite 2 :",
+
+  "output_settings": "📤 Paramètres de Sortie",
+  "output_main": "Afficher la Langue Principale",
+  "output_trans1": "Afficher la Traduction 1",
+  "output_trans2": "Afficher la Traduction 2",
+  "output_method": "Méthode de Sortie :",
+  "output_note": "Note : Tout le texte apparaît dans la Dernière Transcription",
+
+  "audio_monitor": "📊 Moniteur Audio",
+  "audio_level": "Niveau Audio",
+  "latest_transcription": "📝 Dernière Transcription",
+  "output_status": "Sortie :",
+  "output_not_started": "Sortie : Non démarrée",
+  "output_updating": "Sortie : subtitles.txt (mise à jour)",
+  "output_stopped": "Sortie : Arrêtée",
+
+  "monitor": "📊 Moniteur",
+  "audio_level": "Niveau Audio",
+  "gate_status": "Porte : Fermée",
+  "gate_open": "Porte : Ouverte",
+  "gate_closed": "Porte : Fermée",
+  "output": "Sortie :",
+  "output_file": "Sortie : subtitles.txt",
+  "output_updating": "Sortie : subtitles.txt (mise à jour)",
+  "output_stopped": "Sortie : subtitles.txt (arrêtée)",
+
+  "transcription": "💬 Transcription",
+  "waiting": "En attente de voix...",
+
+  "buttons": {
+    "start": "▶️ Démarrer la Reconnaissance",
+    "stop": "⏹️ Arrêter la Reconnaissance",
+    "wizard": "🧙 Assistant de Configuration",
+    "models_folder": "📁 Dossier des Modèles",
+    "language": "🌐"
+  },
+
+  "messages": {
+    "started": "Reconnaissance vocale démarrée",
+    "stopped": "Reconnaissance vocale arrêtée",
+    "models_folder_opened": "\nDossier des modèles ouvert : {path}\nConsultez le fichier README.md dans ce dossier pour ajouter des modèles manuellement.",
+    "error_starting": "Erreur lors du démarrage de la reconnaissance :",
+    "select_language": "Select your language / Seleccione su idioma / 言語を選択"
+  },
+
+  "errors": {
+    "model_load_failed": "Échec du Chargement du Modèle",
+    "download_issue": "Il peut s’agir d’un téléchargement corrompu ou d’un problème réseau.\n\nEssayez :\n1. Vérifiez votre connexion Internet\n2. Essayez un modèle plus petit (base ou small)\n3. Videz le cache et réessayez (voir la console pour l’emplacement du cache)"
+  },
+
+  "wizard": {
+    "title": "Assistant de Configuration",
+    "back": "← Retour",
+    "next": "Suivant →",
+    "finish": "Terminer",
+    "cancel": "Annuler",
+
+    "step1_progress": "Étape 1 sur 4 : Sélection du Microphone",
+    "step1_title": "🎤 Choisissez votre Microphone",
+    "step1_desc": "Sélectionnez le microphone utilisé pour la reconnaissance vocale :",
+    "no_devices": "❌ Aucun périphérique d’entrée trouvé !",
+    "test_microphone": "🔊 Tester le Microphone Sélectionné",
+    "testing": "🔊 Test du microphone...",
+    "mic_working": "✅ Microphone fonctionnel !",
+    "mic_quiet": "⚠️ Niveau très faible ou aucune entrée détectée",
+
+    "step2_progress": "Étape 2 sur 4 : Calibration de la Porte de Bruit",
+    "step2_title": "🎚️ Calibrer la Porte de Bruit",
+    "step2_desc": "Dites clairement la phrase suivante :",
+    "test_sentence": "Le vif renard brun saute par-dessus le chien paresseux",
+    "current_level": "Niveau Actuel : {level} dB",
+    "start_monitoring": "▶️ Démarrer le Monitoring",
+    "stop_monitoring": "⏹️ Arrêter le Monitoring",
+    "gate_threshold": "Seuil de Porte : {value} dB",
+    "auto_calibrate": "🔧 Auto-Calibrer",
+
+    "step3_progress": "Étape 3 sur 4 : Sélection du Modèle",
+    "step3_title": "🧠 Choisir le Modèle Whisper",
+    "step3_desc": "Choisissez l’équilibre entre précision et vitesse :",
+
+    "step4_progress": "Étape 4 sur 4 : Test de Reconnaissance",
+    "step4_title": "✅ Tester votre Configuration",
+    "step4_desc": "Votre configuration est prête ! Cliquez sur « Terminer » pour enregistrer et démarrer.",
+    "config_summary": "📋 Résumé de la Configuration"
+  },
+
+  "models": {
+    "tiny": "Tiny – Le plus rapide, précision la plus faible (39M paramètres, ~75 MB)",
+    "base": "Base – Rapide, précision correcte (74M paramètres, ~145 MB)",
+    "small": "Small – Équilibré (244M paramètres, ~488 MB) [Recommandé]",
+    "medium": "Medium – Haute précision, plus lent (769M paramètres, ~1.5 GB)",
+    "large": "Large – Précision maximale, le plus lent (1550M paramètres, ~3.1 GB)"
+  },
+
+  "languages": {
+    "en": "Anglais / English",
+    "es": "Espagnol / Español",
+    "ja": "Japonais / 日本語",
+    "auto": "Détection Automatique"
+  },
+
+  "browser_output": {
+    "title": "🌐 Sortie Navigateur (OBS)",
+    "url_label": "URL de la Source Navigateur :",
+    "copy_url": "📋 Copier l’URL",
+    "url_copied": "✅ URL copiée !",
+    "main_styling": "Style de la Langue Principale :",
+    "trans1_styling": "Style de la Traduction 1 :",
+    "trans2_styling": "Style de la Traduction 2 :",
+    "font": "Police :",
+    "text_color": "Couleur du Texte :",
+    "shadow_color": "Couleur de l’Ombre :",
+    "preview": "Aperçu",
+    "instructions": "Ajoutez cette URL comme Source Navigateur dans OBS :\n1. Clic droit dans les sources OBS\n2. Ajouter > Navigateur\n3. Collez l’URL ci-dessus\n4. Largeur : 1920, Hauteur : 1080\n5. Cochez « Fermer la source lorsqu’elle n’est pas visible »"
+  }
+}
