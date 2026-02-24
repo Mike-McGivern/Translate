@@ -50,7 +50,7 @@ class LanguageSelectionDialog(ctk.CTkToplevel):
         button_container = ctk.CTkFrame(self, fg_color="transparent")
         button_container.pack(expand=True, fill="both", padx=40, pady=20)
 
-        # English button
+        # English
         en_button = ctk.CTkButton(
             button_container,
             text="🇺🇸 English",
@@ -62,7 +62,7 @@ class LanguageSelectionDialog(ctk.CTkToplevel):
         )
         en_button.pack(fill="x", pady=10)
 
-        # Spanish button
+        # Spanish
         es_button = ctk.CTkButton(
             button_container,
             text="🇪🇸 Español",
@@ -74,7 +74,7 @@ class LanguageSelectionDialog(ctk.CTkToplevel):
         )
         es_button.pack(fill="x", pady=10)
 
-        # Japanese button
+        # Japanese
         ja_button = ctk.CTkButton(
             button_container,
             text="🇯🇵 日本語",
@@ -86,6 +86,30 @@ class LanguageSelectionDialog(ctk.CTkToplevel):
         )
         ja_button.pack(fill="x", pady=10)
 
+        # German
+        de_button = ctk.CTkButton(
+            button_container,
+            text="🇩🇪 Deutsch",
+            font=("Arial", 18, "bold"),
+            height=70,
+            fg_color="#0044aa",
+            hover_color="#0066dd",
+            command=lambda: self.select_language("de")
+        )
+        de_button.pack(fill="x", pady=10)
+
+        # French
+        fr_button = ctk.CTkButton(
+            button_container,
+            text="🇫🇷 Français",
+            font=("Arial", 18, "bold"),
+            height=70,
+            fg_color="#002f8a",
+            hover_color="#004fcc",
+            command=lambda: self.select_language("fr")
+        )
+        fr_button.pack(fill="x", pady=10)
+
     def select_language(self, language_code: str):
         """Handle language selection"""
         self.selected_language = language_code
@@ -93,7 +117,6 @@ class LanguageSelectionDialog(ctk.CTkToplevel):
 
     def on_close(self):
         """Prevent closing without selection"""
-        # Default to English if user tries to close
         if self.selected_language is None:
             self.select_language("en")
 
